@@ -1,6 +1,6 @@
 {
   "name": "PNTest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of PNTest.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/xixi/PNTest",
@@ -12,11 +12,11 @@
     "xixi": "xixi_wen@foxmial.com"
   },
   "source": {
-    "git": "https://github.com/xixi/PNTest.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/emodeqidao/PNTest.git",
+    "tag": "0.1.1"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "11.0"
   },
   "source_files": "PNTest/Classes/**/*"
 }
