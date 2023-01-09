@@ -30,13 +30,27 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'PNTest/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'PNTest' => ['PNTest/Assets/*.png']
-  # }
+  s.vendored_frameworks = ['PNTest/*.framework']
+  #s.source_files = "PNTest/PNTool.framework/Headers/*.{h,m}"
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  #s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
+
+  s.public_header_files = 'PNTest/PNTool.framework/Headers/*.{h}'
+  s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
+
+  s.static_framework = true
+
+  #s.public_header_files = 'Pod/Classes/*.h'
+  #s.frameworks = 'UIKit', 'MapKit',
+  s.frameworks = ['UIKit','Foundation']
+  s.dependency 'AFNetworking', '~>4.0'
+  s.dependency 'SVProgressHUD'
+  
+  s.user_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => '$(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)__XCODE_$(XCODE_VERSION_MAJOR))',
+    'EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64__XCODE_1200' => 'arm64 arm64e armv7 armv7s armv6 armv8'
+  }
+  
 end

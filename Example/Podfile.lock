@@ -1,27 +1,43 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - PNTest (0.1.1)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - PNTest (0.1.2):
+    - AFNetworking (~> 4.0)
+    - SVProgressHUD
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
+  - AFNetworking
   - PNTest (from `../`)
+  - SVProgressHUD
 
 SPEC REPOS:
   trunk:
-    - FBSnapshotTestCase
+    - AFNetworking
+    - SVProgressHUD
 
 EXTERNAL SOURCES:
   PNTest:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  PNTest: 660e242ebb44d64539b654704564b3d739d7cde7
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  PNTest: fcca4c620ecee0fd44398f0fd41e92138754066e
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 1df01353f4186195241eb14ca8f70bdfef10b2c6
+PODFILE CHECKSUM: a4e2070b2152877ff6aeba3792ab6a50c6671987
 
 COCOAPODS: 1.11.3

@@ -1,6 +1,6 @@
 {
   "name": "PNTest",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "A short description of PNTest.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/xixi/PNTest",
@@ -13,10 +13,36 @@
   },
   "source": {
     "git": "https://github.com/emodeqidao/PNTest.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "PNTest/Classes/**/*"
+  "vendored_frameworks": [
+    "PNTest/*.framework"
+  ],
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "public_header_files": "PNTest/PNTool.framework/Headers/*.{h}",
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC"
+  },
+  "static_framework": true,
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "~>4.0"
+    ],
+    "SVProgressHUD": [
+
+    ]
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "$(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)__XCODE_$(XCODE_VERSION_MAJOR))",
+    "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64__XCODE_1200": "arm64 arm64e armv7 armv7s armv6 armv8"
+  }
 }

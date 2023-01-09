@@ -1,13 +1,11 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 target 'PNTest_Example' do
   pod 'PNTest', :path => '../'
-
-  target 'PNTest_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
-  end
+  pod 'SVProgressHUD'
+  pod 'AFNetworking'
 end
+
+ 

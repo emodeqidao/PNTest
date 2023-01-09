@@ -7,6 +7,7 @@
 //
 
 #import "PNViewController.h"
+#import <PNTool/PNTool.h>
 
 @interface PNViewController ()
 
@@ -14,10 +15,14 @@
 
 @implementation PNViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    PNVoucher *vc = [[PNVoucher alloc] init];
+    [vc printDemo:@"12"];
+    [vc testShow];
+    [vc testColor];
 }
 
 - (void)didReceiveMemoryWarning
