@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 
-  s.public_header_files = 'PNTest/PNTool.framework/Headers/*.{h}'
+#  s.public_header_files = 'PNTest/*.framework/Headers/*.{h}'
   s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 
   s.static_framework = true
