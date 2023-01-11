@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PNTest'
-  s.version          = '0.2.1'
+  s.version          = '0.3.0'
   s.summary          = 'A short description of PNTest.'
 
 # This description is used to generate tags and improve search results.
@@ -47,6 +47,7 @@ TODO: Add long description of the pod here.
   s.frameworks = ['UIKit','Foundation']
   s.dependency 'AFNetworking', '~>4.0'
   s.dependency 'SVProgressHUD'
+  s.dependency 'Masonry'
   
   s.user_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => '$(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)__XCODE_$(XCODE_VERSION_MAJOR))',

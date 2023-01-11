@@ -1,6 +1,6 @@
 {
   "name": "PNTest",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "summary": "A short description of PNTest.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/xixi/PNTest",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/emodeqidao/PNTest.git",
-    "tag": "0.1.2"
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "11.0"
@@ -24,7 +24,6 @@
   "pod_target_xcconfig": {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
-  "public_header_files": "PNTest/PNTool.framework/Headers/*.{h}",
   "xcconfig": {
     "OTHER_LDFLAGS": "-ObjC"
   },
@@ -38,6 +37,9 @@
       "~>4.0"
     ],
     "SVProgressHUD": [
+
+    ],
+    "Masonry": [
 
     ]
   },

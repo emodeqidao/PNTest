@@ -6,6 +6,7 @@ target 'PNTest_Example' do
   pod 'PNTest', :path => '../'
   pod 'SVProgressHUD'
   pod 'AFNetworking'
+  pod 'Masonry'
 end
 
  

@@ -7,12 +7,19 @@
 //
 
 #import "PNAppDelegate.h"
+#import "PNViewController.h"
 
 @implementation PNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    PNViewController *vc = [[PNViewController alloc] init];
+    UINavigationController *nav = [[[UINavigationController alloc] init] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

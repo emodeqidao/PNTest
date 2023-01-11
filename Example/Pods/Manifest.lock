@@ -14,19 +14,23 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - PNTest (0.1.2):
+  - Masonry (1.1.0)
+  - PNTest (0.2.1):
     - AFNetworking (~> 4.0)
+    - Masonry
     - SVProgressHUD
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - AFNetworking
+  - Masonry
   - PNTest (from `../`)
   - SVProgressHUD
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Masonry
     - SVProgressHUD
 
 EXTERNAL SOURCES:
@@ -35,9 +39,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  PNTest: fcca4c620ecee0fd44398f0fd41e92138754066e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  PNTest: cfcecc9897c62dd326e7220e5f64c2de77aaddf6
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: a4e2070b2152877ff6aeba3792ab6a50c6671987
+PODFILE CHECKSUM: 6a9e70cccb015e2e3d4141b0de3e1053f5fcca99
 
 COCOAPODS: 1.11.3
